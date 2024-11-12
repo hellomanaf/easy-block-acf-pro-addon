@@ -1,0 +1,24 @@
+section.eg-carousel-slider-section,
+section.eg-carousel-slider-section *{
+    box-sizing: border-box;
+}
+.eg-carousel-slider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.eg-carousel-slider ul li {
+    width: calc(33.33% - 14px);
+    display: none;
+}
+.eg-carousel-slider ul li:nth-child(1),
+.eg-carousel-slider ul li:nth-child(2),
+.eg-carousel-slider ul li:nth-child(3) {
+    display: block;
+}
+.scroll-style-n {
+    max-height: 300px;
+}

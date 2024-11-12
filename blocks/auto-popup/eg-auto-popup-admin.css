@@ -1,0 +1,26 @@
+.auto-pupup-outer {
+    position: static;
+    height: 300px;
+    padding: 0;
+}
+.auto-popup-load {
+    position: static !important;
+    z-index: 1 !important;
+    opacity: 1 !important;
+}
+.auto-popup-content {
+    top: 10%;
+    transform: none;
+    height: 80%;
+    overflow: hidden;
+}
+.auto-popup * {
+    box-sizing: border-box;
+}
+.auto-pupup-outer {
+    background-color: #000000;
+}
+.auto-popup-content .auto-popup-content-row,
+.auto-popup-content .auto-popup-content-row .auto-popup-content-col {
+    height: 100%;
+}

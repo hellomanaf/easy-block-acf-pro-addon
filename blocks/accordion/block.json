@@ -1,0 +1,33 @@
+{
+	"name": "acf/eg-accordion",
+	"title": "Accordion",
+	"description": "Custom accordion block for FAQ, Locations. etc",
+	"editorStyle": "",
+	"editorScript": "",
+	"style": "eg-accordion-style",
+	"script": "eg-accordion-script",
+	"category": "easy-block",
+	"icon": "excerpt-view",
+	"apiVersion": 2,
+	"keywords": [ "popup", "block" ],
+	"acf": {
+		"mode": "auto",
+		"renderTemplate": "render.php",
+        "postTypes": ["post", "page"]
+	},
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "color": false,
+        "customClassName": true,
+        "jsx": false
+    },
+	"example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {
+                "_is_preview": "true"
+            }
+        }
+    }
+}

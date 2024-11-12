@@ -1,0 +1,77 @@
+section.eg-location-accordion {
+    padding: 50px 0;
+}
+section.eg-location-accordion *{
+    box-sizing: border-box;
+}
+section.eg-location-accordion.remove-top-padding{
+    padding-top: 0;
+}
+section.eg-location-accordion.remove-bottom-padding{
+    padding-bottom: 0;
+}
+.eg-location-accordion-block-header h2{
+    margin-bottom: 40px;
+}
+.eg-location-accordion-block-content {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.eg-location-accordion-outer {
+    width: 100%;
+}
+.eg-location-accordion-each {
+    border-bottom: 1px solid #d5d5d5;
+}
+.eg-location-accordion-each:last-child {
+    border-bottom: none;
+}
+.eg-location-accordion-each-title {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 30px 22px 0px;
+    color: #0057A4;
+    background-image: url(images/accordion-plus.svg);
+    background-repeat: no-repeat;
+    background-position: right 26px;
+    cursor: pointer;
+}
+.eg-location-accordion-each.eg-location-accordion-active .eg-location-accordion-each-title {
+    background-image: url(images/accordion-minus.svg);
+}
+.eg-location-accordion-each-title h6 {
+    font-weight: normal;
+    font-size: 22px;
+    color: #1E1E1E;
+    margin: 0;
+    padding: 0;
+}
+.eg-location-accordion-each.eg-location-accordion-active .eg-location-accordion-each-title h6 {
+    color: #000000;
+}
+.eg-location-accordion-each-content {
+    padding: 0px 0px 30px 0px;
+    display: none;
+}
+.eg-location-accordion-each:last-child .eg-location-accordion-each-content {
+    padding-bottom: 0;
+}
+
+
+@media only screen and ( max-width: 1199px) {
+    .eg-location-accordion-block-header {
+        margin-bottom: 30px;
+    }
+}
+
+
+body.rtl .eg-location-accordion-each-title {
+    text-align: right;
+    padding: 25px 0 25px 30px;
+    background-position: left 26px;
+}
+body.rtl .eg-location-accordion-each-content {
+    text-align: right;
+}

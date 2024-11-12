@@ -1,0 +1,33 @@
+{
+	"name": "acf/eg-hero-banner",
+	"title": "Hero Banner",
+	"description": "Banner section with image or video",
+	"editorStyle": "",
+	"editorScript": "",
+	"style": "eg-hero-banner-style",
+	"script": "",
+	"category": "easy-block",
+	"icon": "block-default",
+	"apiVersion": 2,
+	"keywords": [ "banner", "hero", "block" ],
+	"acf": {
+		"mode": "auto",
+		"renderTemplate": "render.php",
+        "postTypes": ["post", "page"]
+	},
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "color": false,
+        "customClassName": true,
+        "jsx": false
+    },
+	"example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {
+                "_is_preview": "true"
+            }
+        }
+    }
+}
